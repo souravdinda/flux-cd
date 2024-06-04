@@ -5,9 +5,9 @@ metadata:
  namespace: flux-system
 spec:
  interval: 5m0s
- path: ./kustomize
+ path: ./podinfo
  prune: true
  sourceRef:
    kind: GitRepository
-   name: podinfo
- targetNamespace: default
+   name: k8s-deploy
+ targetNamespace: pod-info

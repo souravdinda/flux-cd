@@ -1,10 +1,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
- name: podinfo
+ name: k8s-deploy
  namespace: flux-system
 spec:
  interval: 30s
  ref:
-   branch: master
- url: https://github.com/stefanprodan/podinfo
+   branch: main
+ url: https://github.com/souravdinda/k8s-deploy.git
