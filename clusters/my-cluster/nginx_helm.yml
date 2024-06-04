@@ -1,8 +1,8 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
+apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: nginx
-  namespace: default
+  namespace: nginx
 spec:
   interval: 1m
   chart:
